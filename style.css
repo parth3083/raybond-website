@@ -1,0 +1,151 @@
+@font-face {
+    font-family: k;
+    src: url("/Assets/Fonts/Kajiro\ Bold.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+#back{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#top{
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+#work{
+    position:relative;
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+    margin: 0 auto;
+    /* border: 3px solid orangered; */
+}
+#nav{
+    pointer-events: all;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nleft,#nright{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+#nleft a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: -1px;
+}
+#nright a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: -1px;
+}
+#nleft img{
+    height: 60px;
+}
+#hero{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%,-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: red; */
+}
+#hleft{
+    min-width:50%;
+    /* background-color: yellow; */
+}
+#hright{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+   width: 20%;
+    /* background-color: green; */
+    color: white;
+}
+#hleft .elem{
+    height: 8vw;
+    position: relative;
+    /* background-color: red; */
+    overflow: hidden;
+}
+#hleft .elem h1:nth-child(1){
+    top: 0;
+}
+#hleft .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: 0.9;
+    font-family: k;
+    font-size: 10vw;
+    font-weight: 100;
+    color: white;
+}
+#hleft button{
+    pointer-events: all;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    font-family: k;
+    font-weight: 100;
+    border: none;
+    height: 5vw;
+    width: 12vw;
+    font-size: 4vw;
+    border-radius: 2px;
+    letter-spacing: 1px;
+}
+#hright #imagediv{
+    width: 100%;
+    height: 150px;
+    margin-top: 16px;
+    margin-bottom: 18px;
+    /* background-color: red; */
+    background-image: url("/Assets/2.avif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#hright p{
+    font-size: 15px;
+    font-weight: 600;
+    text-align: right;
+}
+#hright p:nth-child(3){
+    margin-bottom: 30px;
+}
